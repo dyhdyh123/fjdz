@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title></title><link rel="stylesheet" href="dafeiji.css"></head><script src="gameEnging.js"></script><script src="myPlane.js"></script><script src="Bullet.js"></script><script src="animate.js"></script><script src="ajax.js"></script><script src="common.js"></script><script src="enemy.js"></script><script src="base.js"></script><script>onload=function(){ 
+				let list=document.getElementById("list");
+				let li=list.getElementsByTagName("li");
+				for(let i=0;i<li.length;i++){
+					li[i].onclick=function(){
+						list.parentNode.removeChild(list);
+						myPlane.jiange = this.value-0;
+						gameEnging.inlt().start();
+					}
+				}
+			}</script><body><div id="main"><ul id="list"><li value="1000">超级困难</li><li value="500">中等困难</li><li value="200">低等困难</li><li value="50">天下无双</li></ul></div></body></html>

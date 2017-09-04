@@ -1,0 +1,51 @@
+
+
+*{margin: 0;padding: 0;border: none;}
+ul,li{list-style: none;}
+
+html,body{
+	height: 100%;width: 100%;
+}
+/*主界面*/
+.main{width:480px;height: 100%;background: url(../images/bg.jpg) repeat-y;margin: 0 auto;position: relative;overflow: hidden;}
+.main #list{width:200px ;height: 400px;position: absolute;left: 140px;top: 150px;}
+.main #list li{width: 198px;height: 70px;margin-bottom:20px;background: #f40;color: white;
+font-size:26px;text-align: center;line-height: 70px;border-radius: 10px;border: 1px solid #000;cursor: pointer;}
+
+/*加载页面*/
+.logo{width: 428px;height: 104px;background: url(../images/logo.png) no-repeat;position: absolute;left: 26px;top: 30%;}
+.logo-plane {width: 200px;height: 42px;background: url(../images/loading1.png) no-repeat;position: absolute;left: 140px; top: 60%;}
+
+/*我的飞机*/
+.my-plane{width: 98px;height: 122px;position: absolute;background: url(../images/me.png) no-repeat;}
+
+
+/*子弹*/
+.bullet{width:7px;height: 18px;background: url(../images/bullet.png) no-repeat;position: absolute;}
+/*子弹爆炸*/
+.bullet-boom {
+	width: 40px;
+	height: 43px;
+	background: url(../images/die1.png) no-repeat;
+	position: absolute;
+}
+
+/*大飞机*/
+.emeny-large{width: 165px;height: 256px;position: absolute;background: url(../images/plane3.png) no-repeat;}
+/*中飞机*/
+.emeny-middle{width: 70px;height: 92px;position: absolute;background: url(../images/plane2.png) no-repeat;}
+/*小飞机*/
+.emeny-small{width: 59px;height: 36px;position: absolute;background: url(../images/plane1.png) no-repeat;}
+
+/* 分数 */
+.score {
+	width: 100px;
+	height: 30px;
+	background: pink;
+	text-align: center;
+	line-height: 30px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
